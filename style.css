@@ -1,43 +1,146 @@
-body{
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding-top: 800px;
     text-align: center;
 }
 
-h1{
+.profile {
+    width: 175px;
+    margin-bottom: 50px;
+    border-radius: 75%;
+}
+
+#welcome {
+    position: absolute;
+    overflow: hidden;
+    height: 800px;
+    color: antiquewhite;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 0.83;
+    background: linear-gradient(#60ebeb 0%, #27ae60 100%);
+    display: table;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+
+h1 {
     font-size: 40px;
-    font-family: cursive;
+    line-height: 1.2;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
 
-#app{
-    width: 100%;
-    height: auto;
-    background-color: coral;
+#name {
+    font-size: 30px;
+    line-height: 1.2;
+    font-family: cursive
 }
 
-#games{
-    width: 100%;
-    height: auto;
-    background-color: darkseagreen;
+h2 {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.2;
+    font-family: monospace
 }
 
-#chatbot{
-    width: 100%;
-    height: auto;
-    background-color:darkturquoise;
+#bio,
+#Work,
+#videos,
+#Writings {
+    padding: 50px;
+    text-align: center;
+    font-size: 42px;
 }
 
-img{
-    height: 350px;
-    width: 350px;
-    transition: transform .2s;
-}
-
-img:hover{
-    transform: scale(0.9);
-}
-
-.line{
+.line {
     height: 6px;
-    background-color: darksalmon;
-    width: 75px;
+    background-color: #000;
+    width: 70px;
     margin: 8px auto;
+}
+
+p {
+    max-width: 17px;
+    margin: 25px auto;
+    font-size: 17px;
+    line-height: 1.3;
+}
+
+.parallax-inner {
+
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.menu {
+    list-style: none;
+    font-family: cursive;
+    position: fixed;
+    top: 0px;
+    right: 30px;
+    z-index: 10;
+    cursor: pointer;
+    font-style: bold;
+    background-color: aqua;
+    margin-top: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.links-list {
+    float: left;
+    color: azure;
+    padding-left: 33px;
+    padding-right: 25px;
+    font-size: 20px;
+    display: inline;
+}
+
+.links-list:hover {
+    background-color: darkcyan;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+#writings a {
+    text-shadow: none ! important;
+    text-decoration: underline !important;
+    color: red ! important;
+}
+
+#contact {
+    background: firebrick;
+}
+
+#contact iframe {
+    width: 100%;
+}
+
+.contact_1 h3 {
+    display: inline;
+}
+
+.contact_1 a {
+    color: white;
+    text-shadow: none;
+}
+
+a {
+    text-decoration: none;
+    color: crimson;
+    text-shadow: 2px 2px gainsboro;
+}
+
+.article:hover {
+    color: fuchsia;
 }
